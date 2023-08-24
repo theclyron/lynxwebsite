@@ -99,9 +99,6 @@ html, body {
  from {opacity: 0;}
  to {opacity: 1;}
    }
-   .title, .subtitle {
-     font-family: "asap-light";
-  }
   .tooltip {
     position: relative;
     display: inline-block;
@@ -129,4 +126,5 @@ html, body {
   #icon {
     width: 35px;
     height: auto;
+    filter: drop-shadow(5px 5px 10px rgba(53, 53, 53, 0.75))
   }
