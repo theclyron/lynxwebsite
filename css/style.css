@@ -90,6 +90,8 @@ html, body {
    }
    .notification {
     background: rgba(53, 53, 53, 0.5);
+    color: white;
+    font-family: "asap-light", "asap-regular";
    }
  @keyframes effect {
  from {top: -15px;}

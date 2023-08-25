@@ -3,7 +3,7 @@ layout: main
 ---
   {% include noscript.html %}
   <div class="container has-fade-effect">
-        <img style="width: 275px; height: auto; display: block; margin: 0 auto;" class="pb-2" title="Lynxmic" src="../img/wordmark.png">
+      <img style="width: 275px; height: auto; display: block; margin: 0 auto;" class="pb-2" title="Lynxmic" src="../img/wordmark.png">
       <div class="box has-text-light is-align-items-center" id="main">
         <div class="field is-grouped is-justify-content-center">
           <p class="control tooltip pl-2 pr-2">
@@ -18,7 +18,8 @@ layout: main
                 <span class="name">Mastodon</span>
             </a>
           </p>
-          <p class="control tooltip pl-2 pr-2">
+          <p class="control tooltip pl-2 pr-2 is-hidden-mobile">
+            <!-- Firefish button hidden from mobile until I can find a way to allow for more than 5 icons without overflowing issue -->
             <a style="color:white;" href="https://lethallava.land/@lynxmic" rel="me">
                 <img id="icon" src="../img/icons/ff.png">
                 <span class="name">Firefish</span>
