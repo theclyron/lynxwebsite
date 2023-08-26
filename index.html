@@ -1,8 +1,69 @@
 ---
-title:
+layout: main
 ---
-<html>
-    <head>
-        <meta http-equiv="refresh" content="0; URL={{ site.url }}/blog" />
-    </head>
-</html>
+  {% include noscript.html %}
+  <div class="notification mt-3 mb-3 ml-6 mr-6 has-fade-effect is-hidden-mobile">
+    <strong>Welcome to the new lynxmic.github.io landing page!</strong> Looking for the blog? Please go to <a href="https://lynxmic.github.io/blog">lynxmic.github.io/blog</a> or click/tap the <i>Blog</i> button below.
+  </div>
+  <div class="container has-fade-effect">
+      <img style="width: 275px; height: auto; display: block; margin: 0 auto;" class="pb-2" title="Lynxmic" src="../img/wordmark.png">
+      <div class="box has-text-light is-align-items-center" id="main">
+        <div class="field is-grouped is-justify-content-center">
+          <p class="control tooltip pl-2 pr-2">
+            <a style="color:white;" href="https://youtube.com/@Lynxmic">
+                <img id="icon" src="../img/icons/youtube.png">
+                <span class="name">YouTube</span>
+            </a>
+          </p>
+          <p class="control tooltip pl-2 pr-2">
+            <a style="color:white;" href="https://wetdry.world/@lynxmic" rel="me">
+                <img id="icon" src="../img/icons/mastodon.png">
+                <span class="name">Mastodon</span>
+            </a>
+          </p>
+          <p class="control tooltip pl-2 pr-2 is-hidden-mobile">
+            <!-- Firefish button hidden from mobile until I can find a way to allow for more than 5 icons without overflowing issue -->
+            <a style="color:white;" href="https://lethallava.land/@lynxmic" rel="me">
+                <img id="icon" src="../img/icons/ff.png">
+                <span class="name">Firefish</span>
+            </a>
+          </p>
+          <p class="control tooltip pl-2 pr-2">
+            <a style="color:white;" href="https://discord.gg/wDxDKJU2sj">
+                <img id="icon" src="../img/icons/discord.png">
+                <span class="name">Discord</span>
+            </a>
+          </p>
+          <p class="control tooltip pl-2 pr-2">
+            <a style="color:white;" href="https://github.com/lynxmic">
+                <img id="icon" src="../img/icons/github.png">
+                <span class="name">GitHub</span>
+            </a>
+          </p>
+          <p class="control tooltip pl-2 pr-2">
+            <a style="color:white;" href="https://twitter.com/Lynxmic">
+                <img id="icon" src="../img/icons/twitter.png">
+                <span class="name">Twitter/&#34;X&#34; <small style="font-family: asap-light-italic;">(archived)</small></span>
+            </a>
+          </p>
+      </div>
+        <div class="field is-grouped is-justify-content-center">
+            <p class="control">
+              <button class="button is-rounded has-background-dark has-text-light is-small" disabled>
+                <i class="fas fa-envelope"></i>&nbsp;&nbsp;Contact
+              </button>
+            </p>
+            <p class="control">
+              <a class="button is-rounded has-background-dark has-text-light is-small" href="{{ site.url }}/blog">
+                <i class="fas fa-pen"></i>&nbsp;&nbsp;Blog
+              </a>
+              </p>
+             <p class="control">
+               <a class="button is-rounded has-background-dark has-text-light is-small" href="https://linktr.ee/lynxmic">
+                <i class="fas fa-plus"></i>&nbsp;&nbsp;More links
+               </a>
+             </p>
+          </div>
+        </div>
+        </div>
+        
