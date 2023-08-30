@@ -130,3 +130,9 @@ html, body {
     height: auto;
     filter: drop-shadow(5px 5px 10px rgba(53, 53, 53, 0.75))
   }
+  #box {
+    background: rgba(53, 53, 53, 0.75); 
+    color: rgba(255, 255, 255, 1); 
+    font-family: 'asap-light';
+    filter: drop-shadow(5px 5px 10px rgba(53, 53, 53, 0.75))
+  }
