@@ -1,5 +1,7 @@
 baseurl: ""
 domain: ""
-url: "https://lynxmic.github.io"
+url: "http://lynxmic.github.io"
 name: "Lynxmic"
-logo: "/img/logo.png"
+logo: "/img/logotype.svg"
+
+discord: "https://discord.gg/wDxDKJU2sj"
