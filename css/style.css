@@ -1,122 +1,26 @@
-html, body {
-  background: linear-gradient(-50deg, rgba(48, 48, 48, .9), rgba(36, 36, 36, .9));
-  animation: gradient 7.5s ease-in infinite;
-  background-size: 400% 400%;
-  height: 100vh;
-  background-color: #363636;
-  color: rgba(255, 255, 255, 1);
-  font-family: "asap-light", "asap-regular";
-  overflow-y: overlay;
-  overflow-x: hidden;
-   }
 @font-face {
-    font-family: "asap-regular";
-    src: url("https://lynxmic.github.io/blog/css/fonts/asap/Asap-Regular.otf");
-   }
-@font-face {
-    font-family: "asap-bold";
-    src: url("https://lynxmic.github.io/blog/css/fonts/asap/Asap-Bold.otf");
-   }
-@font-face {
-    font-family: "asap-bold-italic";
-    src: url("https://lynxmic.github.io/blog/css/fonts/asap/Asap-BoldItalic.otf");
-   }
-@font-face {
-    font-family: "asap-italic";
-    src: url("https://lynxmic.github.io/blog/css/fonts/asap/Asap-Italic.otf");
-   }
-@font-face {
-    font-family: "asap-light";
-    src: url("https://lynxmic.github.io/blog/css/fonts/asap/Asap-Light.otf");
-   }
-@font-face {
-    font-family: "asap-light-italic";
-    src: url("https://lynxmic.github.io/blog/css/fonts/asap/Asap-LightItalic.otf");
-   }
-@font-face {
-    font-family: "timeburner-bold";
-    src: url("https://lynxmic.github.io/blog/css/fonts/timeburner/timeburnerbold.ttf");
-   }
-::-webkit-scrollbar {
-        width: 8px;
-        background: transparent;
-         }
-::-webkit-scrollbar-track { 
-       border-radius: 10px;
-        }
-::-webkit-scrollbar-thumb {
-       background: rgba(215, 215, 215, .5);
-       border-radius: 10px;
-        }
-::-webkit-scrollbar-thumb:hover {
-       background: rgba(215, 215, 215, .7);
-        }
-a {
-       color: #519cd6;
-    }
-a:hover {
-       color: #70b5eb;
-      }
-a#entry {
-       color: white;
-      }
-pre, code {
-       background-color: #252525;
-       color: #d7d7d7;
-    }
-#logo {
-  position: relative;
-  left: -100px;
-  animation: slide 0.6s forwards, fadein 0.5s;
-  filter: drop-shadow(5px 5px 10px rgba(232, 226, 249, 0.25));
-    }
-#section {
-   background: rgba(53, 53, 53, 0.5);
-   max-width: inherit;
-   position: relative;
-   opacity: 0;
-   animation: effect 0.6s ease-in-out;
-   animation-delay: 0.3s;
-   animation-fill-mode: both;
-  }
-  .title, .subtitle, strong {
-    color: rgba(255, 255, 255, 1); 
-  }
-  .card {
-    background: rgba(53, 53, 53, 0.5);
-    color: rgba(255, 255, 255, 1);
-  }
-  #centerbox {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-  }
-  #entrypic:hover {
-    filter: drop-shadow(5px 5px 10px rgb(40, 40, 40));
-  }
- .tooltip {
-   position: relative;
-   display: inline-block;
+  font-family: "asap-regular";
+  src: url("https://lynxmic.github.io/blog/css/fonts/asap/Asap-Regular.otf");
  }
- .tooltip .name {
-   visibility: hidden;
-   width: 100px;
-   bottom: 100%;
-   left: 50%;
-   margin-left: -50px;
-   background-color: rgba(53, 53, 53, 0.75);
-   color: white;
-   text-align: center;
-   font-family: "asap-light";
-   border-radius: 6px;
-   backdrop-filter: blur(3px);
-   position: absolute;
-   z-index: 1;
+@font-face {
+  font-family: "asap-bold";
+  src: url("https://lynxmic.github.io/blog/css/fonts/asap/Asap-Bold.otf");
  }
- .tooltip:hover .name {
-   visibility: visible;
-   animation: fadein 0.3s;
+@font-face {
+  font-family: "asap-bold-italic";
+  src: url("https://lynxmic.github.io/blog/css/fonts/asap/Asap-BoldItalic.otf");
+ }
+@font-face {
+  font-family: "asap-italic";
+  src: url("https://lynxmic.github.io/blog/css/fonts/asap/Asap-Italic.otf");
+ }
+@font-face {
+  font-family: "asap-light";
+  src: url("https://lynxmic.github.io/blog/css/fonts/asap/Asap-Light.otf");
+ }
+@font-face {
+  font-family: "asap-light-italic";
+  src: url("https://lynxmic.github.io/blog/css/fonts/asap/Asap-LightItalic.otf");
  }
  @keyframes gradient {
   0% {
@@ -139,4 +43,225 @@ pre, code {
 @keyframes fadein {
   from {opacity: 0;}
   to {opacity: 1;}
+    }
+    @keyframes snowfall {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(100vh);
+      }
+    }
+    .snowflakes {
+      display: none;
+      position: fixed; /* Change from absolute to fixed */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none; /* Make snowflakes non-interactive */
+      z-index: 1;
+    }
+    .snowflake {
+      position: absolute;
+      background-color: #fff;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      animation: snowfall linear infinite;
+      opacity: 0.5;
+    }
+    .snowflake:nth-child(1) {
+      left: 15%;
+      animation-duration: 15s;
+    }
+    
+    .snowflake:nth-child(2) {
+      left: 30%;
+      animation-duration: 10s;
+    }
+    
+    .snowflake:nth-child(3) {
+      left: 45%;
+      animation-duration: 12s;
+    }
+    
+    .snowflake:nth-child(4) {
+      left: 60%;
+      animation-duration: 18s;
+    }
+    
+    .snowflake:nth-child(5) {
+      left: 75%;
+      animation-duration: 11s;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .tabs {
+      max-width: inherit;
+      position: relative;
+      opacity: 0;
+      animation: effect 0.6s ease-in-out;
+      animation-delay: 0.3s;
+      animation-fill-mode: both;
+    }
+    #infobox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 96.5vh;
+    }
+    div.tabs {
+      margin-right: 32px
+    }
+
+@media (prefers-color-scheme: dark) {
+  * {
+  color: white;
+  }
+html, body {
+  background: linear-gradient(-50deg, rgba(48, 48, 48, .9), rgba(36, 36, 36, .9));
+  animation: gradient 7.5s ease-in infinite;
+  background-size: 400% 400%;
+  background-color: #363636;
+  font-family: "asap-light", "asap-regular";
+  overflow-y: overlay;
+  overflow-x: hidden;
+   }
+   ::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+     }
+::-webkit-scrollbar-track { 
+   border-radius: 10px;
+    }
+::-webkit-scrollbar-thumb {
+   background: rgba(215, 215, 215, .5);
+   border-radius: 10px;
+    }
+::-webkit-scrollbar-thumb:hover {
+   background: rgba(215, 215, 215, .7);
+    }
+  }
+a {
+       color: #519cd6;
+    }
+a:hover {
+       color: #70b5eb;
+      }
+a#entry {
+       color: white;
+      }
+pre, code {
+       background-color: #252525;
+       color: #d7d7d7;
+    }
+#logo {
+  width: 275px; 
+  height: auto; 
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  left: -100px;
+  animation: slide 0.6s forwards, fadein 0.5s;
+  filter: drop-shadow(5px 5px 10px rgba(232, 226, 249, 0.25));
+    }
+#section {
+   background: rgba(53, 53, 53, 0.5);
+   max-width: inherit;
+   position: relative;
+   opacity: 0;
+   animation: effect 0.6s ease-in-out;
+   animation-delay: 0.3s;
+   animation-fill-mode: both;
+  }
+  .card {
+    background: rgba(53, 53, 53, 0.5);
+  }
+  #infomsg {
+    background: rgba(53, 53, 53, 0.5);
+    opacity: 0;
+    animation: effect 0.6s ease-in-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+    text-align: center;
+   }
+
+[data-theme=light],
+.theme-light
+ {
+    * {
+     color: black;
+    }
+    html, body {
+      background: linear-gradient(-50deg, rgba(248, 228, 249, .9), rgba(213, 223, 248, .9));
+      background-color: #363636;
+      animation: gradient 7.5s ease-in infinite;
+      background-size: 400% 400%;
+      font-family: "asap-light", "asap-regular";
+      overflow-y: overlay;
+      overflow-x: hidden;
+      height: 100vh
+       }
+  ::-webkit-scrollbar {
+        width: 8px;
+        background: transparent;
+         }
+::-webkit-scrollbar-track { 
+       border-radius: 10px;
+        }
+::-webkit-scrollbar-thumb {
+       background: rgba(55, 55, 55, .5);
+       border-radius: 10px;
+        }
+::-webkit-scrollbar-thumb:hover {
+       background: rgba(55, 55, 55, .7);
+        }
+        a {
+          color: #519cd6;
+       }
+   a:hover {
+          color: #70b5eb;
+         }
+   a.button, .tabs a {
+          color: black;
+         }
+   pre, code {
+          background-color: #252525;
+          color: #d7d7d7;
+       }
+   #logo {
+     width: 275px; 
+     height: auto; 
+     display: block;
+     margin: 0 auto;
+     position: relative;
+     left: -100px;
+     animation: slide 0.6s forwards, fadein 0.5s;
+     filter: drop-shadow(5px 5px 10px rgba(232, 226, 249, 0.25));
+       }
+   #section {
+      background: rgba(213, 213, 213, 0.4);
+      max-width: inherit;
+      position: relative;
+      opacity: 0;
+      animation: effect 0.6s ease-in-out;
+      animation-delay: 0.3s;
+      animation-fill-mode: both;
+     }
+     .card {
+       background: rgba(213, 213, 213, 0.4);
+     }
+     #infomsg {
+      background: rgba(213, 213, 213, 0.4);
+      opacity: 0;
+      animation: effect 0.6s ease-in-out;
+      animation-delay: 0.3s;
+      animation-fill-mode: both;
+      text-align: center;
+    }
     }

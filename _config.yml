@@ -3,5 +3,7 @@ domain: ""
 url: "https://lynxmic.github.io"
 name: "Lynxmic"
 logo: "/img/logotype.png"
+currentyear: "2024"
 
 discord: "wDxDKJU2sj"
+source_url: "https://github.com/Lynxmic/lynxmic.github.io"

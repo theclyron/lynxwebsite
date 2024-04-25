@@ -1,10 +1,33 @@
 ---
-layout: discord
+permalink: /discord.html
 ---
-<div class="container has-fade-effect" id="centerbox">
-  <div class="box has-text-light is-align-items-center" style="text-align: center;" id="section">
-       <p><i class="fab fa-discord fa-3x"></i></p>
-       <p>Redirecting to Discord...</p>
-       <p><a href="https://discord.gg/{{ site.discord }}">Click here if you're not being redirected automatically</a></p>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include discord.html %}
+</head>
+
+<body>
+  <div class="content">
+        <div class="container" id="infobox">
+            <div class="box" id="infomsg">
+                 <p><i class="fab fa-discord fa-3x"></i></p>
+                 <p>Redirecting to Discord...</p>
+                 <p><a href="https://discord.gg/{{ site.discord }}">Click here if you're not being redirected automatically</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="snowflakes-container">
+      <div class="snowflakes" id="snowflakes" aria-hidden="true">
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+        <div class="snowflake"></div>
+      </div>
+    </div>
+  <script type="text/javascript" src="{{ site.url }}/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="{{ site.url }}/js/lightmode.js"></script>
+  <script type="text/javascript" src="{{ site.url }}/js/holiday.js"></script>
+</body>
+</html>

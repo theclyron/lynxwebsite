@@ -6,9 +6,58 @@
 
 <body>
   <div class="content is-align-self-center">
+    <div class="container">
+      <img class="pt-2 pb-2" title="Lynxmic" src="{{ site.url }}/{{ site.baseurl }}/img/wordmark.svg" id="logo">
+      <div class="tabs is-centered is-toggle">
+        <ul>
+          <li class="is-active">
+            <a onclick="openTab(event, 'home')">
+              <span class="icon is-small"><i class="fas fa-house" aria-hidden="true"></i></span>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a onclick="openTab(event, 'about')">
+              <span class="icon is-small"><i class="fas fa-question" aria-hidden="true"></i></span>
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a onclick="openTab(event, 'projects')">
+              <span class="icon is-small"><i class="fas fa-desktop" aria-hidden="true"></i></span>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a onclick="openTab(event, 'socials')">
+              <span class="icon is-small"><i class="fas fa-users" aria-hidden="true"></i></span>
+              <span>Socials</span>
+            </a>
+            </li>
+           <li>
+            <a onclick="openTab(event, 'socials')">
+              <span class="icon is-small"><i class="fas fa-pen" aria-hidden="true"></i></span>
+              <span>Blog</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     {{ content }}
     </div>
-  <script type="text/javascript" src="{{ site.url }}/js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="{{ site.url }}/js/modal.js"></script>
+    </div>
+    <div id="snowflakes-container">
+    <div class="snowflakes" id="snowflakes" aria-hidden="true">
+      <div class="snowflake"></div>
+      <div class="snowflake"></div>
+      <div class="snowflake"></div>
+      <div class="snowflake"></div>
+      <div class="snowflake"></div>
+    </div>
+  </div>
+  <script type="text/javascript" src="{{ site.url }}/{{ site.baseurl }}/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="{{ site.url }}/{{ site.baseurl }}/js/lightmode.js"></script>
+  <script type="text/javascript" src="{{ site.url }}/{{ site.baseurl }}/js/tabs.js"></script>
+  <script type="text/javascript" src="{{ site.url }}/{{ site.baseurl }}/js/holiday.js"></script>
+  <script type="text/javascript" src="{{ site.url }}/{{ site.baseurl }}/js/info.js"></script>
 </body>
 </html>
