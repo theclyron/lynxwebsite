@@ -6,10 +6,10 @@ function toggleLightMode() {
 
     const logoImg = document.getElementById('logo');
  if (newMode === 'light') {
-  logoImg.src = '../img/wordmark light.svg';
+  logoImg.src = '../lynxwebsite/img/wordmark light.svg';
   localStorage.setItem('logoMode', 'light');
   } else {
-  logoImg.src = '../img/wordmark.svg';
+  logoImg.src = '../lynxwebsite/img/wordmark.svg';
   localStorage.setItem('logoMode', 'dark');
 }
 }  
@@ -24,7 +24,7 @@ function toggleLightMode() {
 const savedLogoMode = localStorage.getItem('logoMode');
 const logoImg = document.getElementById('logo');
 if (savedLogoMode === 'light') {
-    logoImg.src = '../img/wordmark light.svg';
+    logoImg.src = '../lynxwebsite/img/wordmark light.svg';
 }
   
   const toggleButton = document.querySelector('#lightModeToggle');
