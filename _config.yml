@@ -1,9 +1,9 @@
 baseurl: ""
 domain: ""
-url: "https://lynxmic.github.io"
+url: "https://sunn.is-a.dev/lynxwebsite"
 name: "Lynxmic"
 logo: "/img/logotype.png"
 currentyear: "2024"
 
 discord: "wDxDKJU2sj"
-source_url: "https://github.com/Lynxmic/lynxmic.github.io"
+source_url: "https://github.com/sunn-ia32/lynxwebsite"
